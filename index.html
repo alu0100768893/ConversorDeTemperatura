@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Conversor de Temperatura</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="José Alberto Mena García" content="Conversor">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="encabezado">
+					<h2>Temperatura de Entrada:</h2>
+					<div class="col-md-4">
+						<div class="dropdown">
+							<input type="number" step="0.01" name="temperatura" id="tempe">
+						    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Convertir a
+						    <span class="caret"></span></button>
+						    <ul class="dropdown-menu" role="menu">
+						      <li><a onclick="calcular('C')">Celcius</a></li>
+						      <li><a onclick="calcular('F')"> Fahrenheit</a></li>
+						    </ul>
+						</div>					</div>
+					<div class="col-md-4" id="resultado">
+					</div>
+					<div class="col-md-4">
+					</div>
+		</div>
+	</div>
+	</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/temperatura.js"></script>
+  </body>
+</html>
