@@ -19,21 +19,16 @@
     <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12" id="encabezado">
-					<h2>Temperatura de Entrada:</h2>
-					<div class="col-md-4">
-						<div class="dropdown">
-							<input type="number" step="0.01" name="temperatura" id="tempe">
-						    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Convertir a
-						    <span class="caret"></span></button>
-						    <ul class="dropdown-menu" role="menu">
-						      <li><a onclick="calcular('C')">Celcius</a></li>
-						      <li><a onclick="calcular('F')"> Fahrenheit</a></li>
-						    </ul>
-						</div>					</div>
-					<div class="col-md-4" id="resultado">
-					</div>
-					<div class="col-md-4">
-					</div>
+					<table>
+      <tr>
+        <th><h4>Introduzca la temperatura(32F, 45C, -2.5f):</h4></th>
+        <td><input id="original" autofocus onchange="calcular();" size="25"></td>
+      </tr>
+      <tr>
+        <th><h4>Resultado:</h4></th>
+        <td><span class="output" id="resul"></span></td>
+      </tr>
+    </table>
 		</div>
 	</div>
 	</div>

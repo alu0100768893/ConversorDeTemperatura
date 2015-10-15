@@ -1,0 +1,30 @@
+{
+  "name": "ConversorDeTemperatura",
+  "version": "1.0.0",
+  "description": "pequeña aplicacion web",
+  "main": "js/temperatura.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+    "test": "open tests/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alu0100768893/ConversorDeTemperatura.git"
+  },
+  "keywords": [
+    "expresion"
+  ],
+  "author": "José Mena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alu0100768893/ConversorDeTemperatura/issues"
+  },
+  "homepage": "https://github.com/alu0100768893/ConversorDeTemperatura"
+}
