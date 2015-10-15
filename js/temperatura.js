@@ -18,18 +18,15 @@ Temperatura.prototype.convertir = function(){
     if(this.tipo == 'c' || this.tipo == 'C'){    
         var res = (this.valor * 9/5)+32;
         res = res.toFixed(1)+" Farenheit";
-        console.log(res);
         return res;
     }   
     else if(this.tipo == 'f' || this.tipo == 'F'){
         var res = (this.valor - 32)*5/9;
         res = res.toFixed(1)+" Celsius";
-        console.log(res);
         return res;
     };
 };
 function calcular(){
-    console.log("entro a calcular");
     var resultado;
     var temperatura = original.value;
     var expresion = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
