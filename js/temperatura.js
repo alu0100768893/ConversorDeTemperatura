@@ -1,7 +1,7 @@
 "use strict"; 
 function Medida(val, tip){
     
-    this.valor = val;
+    this.valor = val || 0;
     this.tipo = tip;
 
 };
@@ -39,6 +39,7 @@ function calcular(){
         var temp = new Temperatura(num, tip);
         resul.innerHTML = temp.convertir();
     }else{
+        console.log("Unidad de temperatura errónea");
     	resul.innerHTML = "Unidad de temperatura errónea";
     }
     
