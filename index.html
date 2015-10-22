@@ -12,6 +12,10 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
 
 </head>
   <body>
@@ -22,7 +26,8 @@
 					<table>
       <tr>
         <th><h4>Introduzca la temperatura(32F, 45C, -2.5f):</h4></th>
-        <td><input id="original" autofocus onchange="calcular();" size="25"></td>
+        <td><input id="original" size="25" value="0c"></td>
+        <td><button onclick="iniciarworker()">Convertir</button></td>
       </tr>
       <tr>
         <th><h4>Resultado:</h4></th>
@@ -32,9 +37,5 @@
 		</div>
 	</div>
 	</div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/temperatura.js"></script>
   </body>
 </html>

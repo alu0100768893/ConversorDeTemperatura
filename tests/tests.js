@@ -25,7 +25,7 @@ describe('Temperatura', function() {
 });
 
 
-describe("Tests Sinon", function(){
+describe("Test del constructor", function(){
 	var sandbox;
 
 	beforeEach(function(){
@@ -44,6 +44,20 @@ describe("Tests Sinon", function(){
 			expect(temp.valor).to.equal(0);
 		});
 	});
+});
+
+describe("Tests Sinon", function(){
+	var sandbox;
+
+	beforeEach(function(){
+		sandbox = sinon.sandbox.create();
+		sandbox.stub(window.console, "log");
+		sandbox.stub(window.console, "error");
+	});
+
+	afterEach(function(){
+		sandbox.restore();
+	});
 
 	describe("Unidad incorrecta", function(){
 		it("Error si se introduce una unidad incorrecta", function(){
@@ -52,4 +66,4 @@ describe("Tests Sinon", function(){
 			sinon.assert.calledWithExactly(console.log, "Unidad de temperatura errónea");
 		});
 	});
-})
+});
