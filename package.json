@@ -9,7 +9,13 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.3.0",
-    "mocha": "^2.3.3"
+    "karma": "^0.13.14",
+    "mocha": "^2.3.3",
+    "karma-mocha": "*",
+    "karma-html2js-preprocessor": "*",
+    "karma-chrome-launcher": "*",
+    "karma-firefox-launcher": "*",
+    "karma-phantomjs-launcher": "*"
   },
   "scripts": {
     "test": "open tests/index.html"
