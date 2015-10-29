@@ -21,6 +21,7 @@ Temperatura.prototype.convertir = function(){
         res = res.toFixed(1)+" Celsius";
         return res;
     }else{
+        console.log("Unidad de temperatura errónea");
         return ("Unidad de temperatura errónea");
     }
 };
