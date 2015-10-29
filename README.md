@@ -22,20 +22,12 @@
 #Pequeña guía sobre la integración con iaas
 
 * Configuración de una red VPN para simular que estoy en la red de la ULL:
-<<<<<<< HEAD
 ![Configuración de la VPN](configurarvpn.png)
-=======
-
->>>>>>> 934d097abd49e4cedd23e1e58fd680d5344e2fd9
 
 * Entramos a [iaas.ull.es](iaas.ull.es).
 
 * Configuramos la máquina:
-<<<<<<< HEAD
 ![Opciones de la Consola](novncconsoleoptions.png)
-=======
->>>>>>> 934d097abd49e4cedd23e1e58fd680d5344e2fd9
-
 
 * Una vez dentro de la máquina, mediante un _ifconfig_ averiguamos la ip de la máquina.
  
@@ -51,8 +43,4 @@
 >#####npm install node-static --save-dev
 
 * Accedemos a la aplicación online:
-<<<<<<< HEAD
 >#####http://ip.de.la.maquina:puerto/index.html
-=======
->#####http://ip.de.la.maquina:puerto/index.html
->>>>>>> 934d097abd49e4cedd23e1e58fd680d5344e2fd9
