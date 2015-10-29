@@ -1,13 +1,10 @@
-var express = require('express');
-var app = express();
+var static = require('node-static');
 
-app.use(express.static('.'));
+var fileServer = new static.Server('./');
 
-var server = app.listen(3000, function () {
-
-  var host = server.address().address;
-  var port = server.address().port;
-
-  console.log('Example app listening at http://%s:%s', host, port);
-
-});
+console.log("Visit http://10.6.128.94:8080/index.html")
+require('http').createServer(function (request, response) {
+    request.addListener('end', function () {
+        fileServer.serve(request, response);
+    }).resume();
+}).listen(8080);
