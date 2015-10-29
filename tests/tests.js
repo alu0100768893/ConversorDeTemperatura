@@ -1,26 +1,27 @@
 var assert = chai.assert;
 var expect = chai.expect;
 
+
 describe('Temperatura', function() {
+          //document.body.innerHTML = __html__['tests/index.html'];
+          //var original = document.getElementById('original');
+          //var resul = document.getElementById('resul');
+	
     it('F a C', function() {
-        original.value = "32F";
-        calcular();
-        assert.deepEqual(resul.innerHTML, "0.0 Celsius");
+    	var temp = new Temperatura(32, 'F');
+        assert.deepEqual(temp.convertir(), "0.0 Celsius");
     });
     it('Ca F', function() {
-        original.value = "45C";
-        calcular();
-        assert.deepEqual(resul.innerHTML, "113.0 Farenheit");
+    	var temp = new Temperatura(45, 'C');
+        assert.deepEqual(temp.convertir(), "113.0 Farenheit");
     });
     it('Error', function() {
-        original.value = "5J";
-        calcular();
-        assert.deepEqual(resul.innerHTML, "Unidad de temperatura errónea");
+    	var temp = new Temperatura(5, 'J');
+        assert.deepEqual(temp.convertir(), "Unidad de temperatura errónea");
     });
     it('Comrprobar salida', function() {
-        original.value = "7f";
-        calcular();
-        assert.typeOf(resul.innerHTML,'string','La salida es un String')
+    	var temp = new Temperatura(7, 'f');
+        assert.typeOf(temp.convertir(),'string','La salida es un String')
     });
 });
 
@@ -61,8 +62,8 @@ describe("Tests Sinon", function(){
 
 	describe("Unidad incorrecta", function(){
 		it("Error si se introduce una unidad incorrecta", function(){
-			original.value = "45L";
-		    calcular();
+			var temp = new Temperatura(45, 'L');
+			temp.convertir();
 			sinon.assert.calledWithExactly(console.log, "Unidad de temperatura errónea");
 		});
 	});
