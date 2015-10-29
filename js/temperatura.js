@@ -26,7 +26,7 @@ Temperatura.prototype.convertir = function(){
     }
 };
 
-function calcular(){
+/*function calcular(){
     var resultado;
     var temperatura = original.value;
     var expresion = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
@@ -42,7 +42,7 @@ function calcular(){
         console.log("Unidad de temperatura errónea");
     	resul.innerHTML = "Unidad de temperatura errónea";
     }
-}
+}*/
 
 
 this.addEventListener('message', function(event){
