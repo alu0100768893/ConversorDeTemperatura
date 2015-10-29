@@ -22,11 +22,13 @@
 #Pequeña guía sobre la integración con iaas
 
 * Configuración de una red VPN para simular que estoy en la red de la ULL:
+
 ![Configuración de la VPN](configurarvpn.png)
 
 * Entramos a [iaas.ull.es](iaas.ull.es).
 
 * Configuramos la máquina:
+
 ![Opciones de la Consola](novncconsoleoptions.png)
 
 * Una vez dentro de la máquina, mediante un _ifconfig_ averiguamos la ip de la máquina.
