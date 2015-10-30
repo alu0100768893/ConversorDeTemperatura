@@ -20,7 +20,7 @@
 >#####[_Pruebas en iaas_](http://10.6.128.77:8080/tests/index.html)
 
 ####Travis:
->#####[_Enlace a Travis_](https://travis-ci.org/alu0100768893/ConversorDeTemperatura.svg?branch=P3)
+>#####[_Enlace a Travis_](https://travis-ci.org/)
 
 
 #Pequeña guía sobre la integración con iaas
