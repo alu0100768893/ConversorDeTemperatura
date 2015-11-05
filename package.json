@@ -1,33 +1,22 @@
 {
-  "name": "ConversorDeTemperatura",
+  "name": "Practica 5 expressjs,
   "version": "1.0.0",
-  "description": "pequeña aplicacion web",
-  "main": "js/temperatura.js",
-  "directories": {
-    "test": "tests"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "^3.3.0",
-    "karma": "^0.13.14",
-    "mocha": "^2.3.3",
-    "karma-mocha": "*",
-    "karma-chai": "*",
-    "karma-html2js-preprocessor": "*",
-    "karma-chrome-launcher": "*",
-    "karma-firefox-launcher": "*",
-    "karma-phantomjs-launcher": "*"
-  },
+  "description": "Conversor de temperatura con expressjs",
+  "main": "servidor.js",
   "scripts": {
-    "test": "open tests/index.html"
+    "test": "nodejs servidor.js",
+    "view": "open open localhost:8080/"
+  },
+  "devDependencies": {
+    "express": "^4.13.3",
+    "ejs": "*",
+    "body-parser": "~1.12.2",
+    "express-ejs-layouts": "~2.0.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/alu0100768893/ConversorDeTemperatura.git"
   },
-  "keywords": [
-    "expresion"
-  ],
   "author": "José Mena",
   "license": "ISC",
   "bugs": {
