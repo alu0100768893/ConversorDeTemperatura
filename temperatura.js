@@ -26,7 +26,7 @@ Temperatura.prototype.convertir = function(){
     }
 };
 
-/*function calcular(){
+function calcular(){
     var resultado;
     var temperatura = original.value;
     var expresion = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
@@ -42,19 +42,4 @@ Temperatura.prototype.convertir = function(){
         console.log("Unidad de temperatura errónea");
     	resul.innerHTML = "Unidad de temperatura errónea";
     }
-}*/
-
-
-this.addEventListener('message', function(event){
-
-        console.log("entre al listener");
-		var expresion = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
-		var cadena = event.data.match(expresion);
-		var tempnum = cadena[1];
-		var temtip = cadena[2];
-		var temperatura_ = new Temperatura(tempnum, temtip);
-		this.postMessage(temperatura_.convertir());
-
-		
-
-},false);
+};
