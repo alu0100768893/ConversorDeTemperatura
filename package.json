@@ -13,6 +13,10 @@
     "test": "node servidor.js",
     "view": "open http://10.6.128.77:8080"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alu0100768893/ConversorDeTemperatura.git"
+  },
   "author": "",
   "license": "ISC"
 }
