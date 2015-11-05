@@ -50,7 +50,5 @@ app.get('/', function(req, res){
 //  res.render('greet', {userName: userName, title: 'greet'});
 //});
 
-app.listen(app.get('8080'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
-});
+app.listen(app.get('8080');
 
