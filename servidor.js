@@ -45,12 +45,10 @@ app.get('/', function(req, res){
 // This route receives the posted form.
 // As explained above, usage of 'body-parser' means
 // that `req.body` will be filled in with the form elements
-//app.post('/', function(req, res){
-//  var userName = req.body.userName;
-//  res.render('greet', {userName: userName, title: 'greet'});
-//});
-
-app.listen(app.get('8080'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+app.post('/', function(req, res){
+	var userName = req.body.userName;
+	res.render('greet', {userName: userName, title: 'greet'});
 });
-
+app.listen(app.get('port'), function() {
+console.log("Node app is running at localhost:" + app.get('port'));
+});
