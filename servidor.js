@@ -35,7 +35,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //---Necesitamos la librería de temperatura para que el servidor pueda
 //---hacer los cálculos
 
-var temperatura_ = require("temperatura.js");
+var temperatura_ = require("./temperatura.js");
 
 // A browser's default method is 'GET', so this
 // is the route that express uses when we visit
