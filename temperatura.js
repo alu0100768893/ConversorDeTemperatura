@@ -3,19 +3,21 @@ function Medida(med){
     this.valor = 0;
     this.tipo = 'c';
         var expresion = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
-        var m = med.match(expresion);
-        var num = m[1];
-        var tip = m[2];
-        num = parseFloat(num);
-        this.valor = num;
-        this.tipo = tip;
+        if(med){
+            var m = med.match(expresion);
+            var num = m[1];
+            var tip = m[2];
+            num = parseFloat(num);
+            this.valor = num;
+            this.tipo = tip;
+        }
 };
 
 function Temperatura(med){
     Medida.call(this, med);
 };
 
-Temperatura.prototype = new Medida(med);
+Temperatura.prototype = new Medida();
 Temperatura.prototype.constructor = Temperatura;
 Temperatura.prototype.convertir = function(){
     if(this.tipo == 'c' || this.tipo == 'C'){    
