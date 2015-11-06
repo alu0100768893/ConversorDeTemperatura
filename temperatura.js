@@ -2,9 +2,9 @@
 function Medida(med){
     this.valor = 0;
     this.tipo = 'c';
-    var expresion = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
-    var m = med.match(expresion);
-    if(m){
+    if(med){
+        var expresion = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
+        var m = med.match(expresion);
         var num = m[1];
         var tip = m[2];
         num = parseFloat(num);
