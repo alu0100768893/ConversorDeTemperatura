@@ -1,7 +1,15 @@
 "use strict"; 
-function Medida(val, tip){
-    this.valor = val || 0;
-    this.tipo = tip;
+function Medida(med){
+    this.valor = 0;
+    this.tipo = 'c';
+    var expresion = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
+    var m = med.match(expresion);
+    if(m){
+        var num = m[1];
+        var tip = m[2];
+        num = parseFloat(num);
+        this.valor = num;
+        this.tipo = tip;
 };
 
 function Temperatura(val, tip){
@@ -26,7 +34,9 @@ Temperatura.prototype.convertir = function(){
     }
 };
 
-function calcular(){
+module.exports = Temperatura;
+
+/*function calcular(){
     var resultado;
     var temperatura = original.value;
     var expresion = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
@@ -42,4 +52,4 @@ function calcular(){
         console.log("Unidad de temperatura errónea");
     	resul.innerHTML = "Unidad de temperatura errónea";
     }
-};
+};*/

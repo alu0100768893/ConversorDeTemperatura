@@ -32,6 +32,11 @@ app.set('port', (process.env.PORT || 8080));
 var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }));
 
+//---Necesitamos la librería de temperatura para que el servidor pueda
+//---hacer los cálculos
+
+var temperatura_ = require("temperatura.js");
+
 // A browser's default method is 'GET', so this
 // is the route that express uses when we visit
 // our site initially.
@@ -46,8 +51,11 @@ app.get('/', function(req, res){
 // As explained above, usage of 'body-parser' means
 // that `req.body` will be filled in with the form elements
 app.post('/', function(req, res){
-	var userName = req.body.userName;
-	res.render('greet', {userName: userName, title: 'greet'});
+  //Modificar temperatura para que reciba un solo elemento.
+  var temp = req.body.original.value;
+  var temp_ = new temperatura_(temp);
+  var conv = temp_.convertir();
+	res.render('views/index', {title: "Resultado", resul: conv});
 });
 app.listen(app.get('port'), function() {
 console.log("Node app is running at localhost:" + app.get('port'));
