@@ -44,7 +44,7 @@ app.get('/', function(req, res){
   // The form's action is '/' and its method is 'POST',
   // so the `app.post('/', ...` route will receive the
   // result of our form
-  res.render('index.ejs', { title: "Conversor"});
+  res.render('index', { title: "Conversor"});
 });
 
 // This route receives the posted form.
@@ -55,7 +55,7 @@ app.post('/', function(req, res){
   var temp = req.body.original.value;
   var temp_ = new temperatura_(temp);
   var resul = temp_.convertir();
-	res.render('views/index', {resul: resul, title: "Resultado"});
+	res.render('index', {resul: resul, title: "Resultado"});
 });
 app.listen(app.get('port'), function() {
 console.log("Node app is running at localhost:" + app.get('port'));
