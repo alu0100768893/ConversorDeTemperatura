@@ -55,6 +55,7 @@ app.post('/', function(req, res){
   var temp = req.body.original.value;
   var temp_ = new temperatura_(temp);
   var resul = temp_.convertir();
+  console.log("resultado es:" + resul);
 	res.render('index', {resul: resul, title: "Resultado"});
 });
 app.listen(app.get('port'), function() {
