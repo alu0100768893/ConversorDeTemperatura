@@ -1,26 +1,22 @@
 {
-  "name": "Practica 5 expressjs,
+  "name": "Practica5expressjs",
   "version": "1.0.0",
-  "description": "Conversor de temperatura con expressjs",
   "main": "servidor.js",
-  "scripts": {
-    "test": "nodejs servidor.js",
-    "view": "open open localhost:8080/"
-  },
-  "devDependencies": {
-    "express": "^4.13.3",
+  "dependencies": {
+    "express": "*",
     "ejs": "*",
     "body-parser": "~1.12.2",
     "express-ejs-layouts": "~2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node servidor.js",
+    "view": "open http://10.6.128.77:8080"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/alu0100768893/ConversorDeTemperatura.git"
   },
-  "author": "José Mena",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alu0100768893/ConversorDeTemperatura/issues"
-  },
-  "homepage": "https://github.com/alu0100768893/ConversorDeTemperatura"
+  "author": "",
+  "license": "ISC"
 }
