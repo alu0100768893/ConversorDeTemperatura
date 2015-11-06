@@ -54,8 +54,8 @@ app.post('/', function(req, res){
   //Modificar temperatura para que reciba un solo elemento.
   var temp = req.body.original.value;
   var temp_ = new temperatura_(temp);
-  var conv = temp_.convertir();
-	res.render('views/index', {title: "Resultado", resul: conv});
+  var resul = temp_.convertir();
+	res.render('views/index', {resul: resul, title: "Resultado"});
 });
 app.listen(app.get('port'), function() {
 console.log("Node app is running at localhost:" + app.get('port'));
