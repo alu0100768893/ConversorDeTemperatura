@@ -52,7 +52,7 @@ app.get('/', function(req, res){
 // that `req.body` will be filled in with the form elements
 app.post('/', function(req, res){
   //Modificar temperatura para que reciba un solo elemento.
-  var temp = req.body.original.value;
+  var temp = req.body.original;
   var temp_ = new temperatura_(temp);
   var resul = temp_.convertir();
   console.log("resultado es:" + resul);
