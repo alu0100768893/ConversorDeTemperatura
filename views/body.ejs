@@ -2,17 +2,19 @@
     <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12" id="encabezado">
-	<table>
-      <tr>
-        <th><h4>Introduzca la temperatura(32F, 45C, -2.5f):</h4></th>
-        <td><input id="original" size="25" value="0c"></td>
-        <td><button onclick="calcular()">Convertir</button></td>
-      </tr>
-      <tr>
-        <th><h4>Resultado:</h4></th>
-        <td><span class="output" id="resul"></span></td>
-      </tr>
+	<form action="/" method="post">
+	  <table>
+        <tr>
+          <th><h4>Introduzca la temperatura(32F, 45C, -2.5f):</h4></th>
+          <td><input type="text" name="original" size="25" value="0c" autofocus / ></td>
+          <td><button type="submit">Convertir</button></td>
+        </tr>
+        <tr>
+          <th><h4>Resultado:</h4></th>
+          <td><span class="output"><%- resul %></span></td>
+        </tr>
     </table>
+  </form>  
 		</div>
 	</div>
 	</div>
