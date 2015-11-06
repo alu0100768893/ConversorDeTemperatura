@@ -11,11 +11,11 @@ function Medida(med){
         this.tipo = tip;
 };
 
-function Temperatura(val, tip){
-    Medida.call(this, val, tip);
+function Temperatura(med){
+    Medida.call(this, med);
 };
 
-Temperatura.prototype = new Medida();
+Temperatura.prototype = new Medida(med);
 Temperatura.prototype.constructor = Temperatura;
 Temperatura.prototype.convertir = function(){
     if(this.tipo == 'c' || this.tipo == 'C'){    
