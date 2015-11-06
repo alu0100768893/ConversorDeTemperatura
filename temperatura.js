@@ -10,6 +10,7 @@ function Medida(med){
         num = parseFloat(num);
         this.valor = num;
         this.tipo = tip;
+    }
 };
 
 function Temperatura(val, tip){
