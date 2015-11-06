@@ -2,7 +2,6 @@
 function Medida(med){
     this.valor = 0;
     this.tipo = 'c';
-    if(med){
         var expresion = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
         var m = med.match(expresion);
         var num = m[1];
@@ -10,7 +9,6 @@ function Medida(med){
         num = parseFloat(num);
         this.valor = num;
         this.tipo = tip;
-    }
 };
 
 function Temperatura(val, tip){
